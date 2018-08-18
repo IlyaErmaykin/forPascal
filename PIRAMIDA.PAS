@@ -1,5 +1,5 @@
 Program PIRAMIDA (input, output);                    (* Objem piramidy        *)
-                                                                                                          (* Storony treugolnica*)
+
   Var A, B, C,                                       (* Storony teugolnica    *)
       H,                                             (* Vysoty piramidy       *)
       P,                                             (* Perimetr osnovaniya   *)
@@ -13,6 +13,7 @@ Program PIRAMIDA (input, output);                    (* Objem piramidy        *)
        S :=  sqrt (p * (P - A) * (P - B) * (P - C)); (* Ploshd treugolnica    *)
 
        V := S * H * 3.0;                             (* Objob                 *)
-       WriteLn (' V = ', V:10:3);                    (* Vyvod rezultat        *)
+       WriteLn (' V = ', V:10:3);                    (* Vyvod rezult          *)
+       WriteLn (' P = ', P:10:3);
        ReadLn;
   End.
