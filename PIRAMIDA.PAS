@@ -1,16 +1,18 @@
-program PIRAMIDA(input, output);      (* Объем пирамиды             *)
-   uses CRT;
-        var A,B,C,
-        H,                            (* Стороны треугольника       *)
-        P,                            (* Высота приымиды            *)
-        S,                            (* Периметр основания         *)
-        V:real;                       (* Площад основания           *)
-   begin
-        writeln('A, B, C, H');        (* Вывод сообщения на экран   *)
-        readln(A,B,C,H);              (* Ввод значений с клавиатуры *)
-        P:=(A+B+C)/2.0;               (* Периметр                   *)
-        S:=sqrt(P*(P-A)*(P-B)*(P-C)); (* Площадь треугольнка        *)
+Program PIRAMIDA (input, output);                    (* Objem piramidy        *)
+                                                                                                          (* Storony treugolnica*)
+  Var A, B, C,                                       (* Storony teugolnica    *)
+      H,                                             (* Vysoty piramidy       *)
+      P,                                             (* Perimetr osnovaniya   *)
+      S,                                             (* Ploshd osnovaniya     *)
+      V: real;                                       (* ojom piramidy 1/3*S*H *)
 
-        V:=S*H/3.0;                   (* Объем                      *)
-        writeln(' V = ',V:10:3);      (* Вывод результатов          *)
-   end.
+  Begin
+       WriteLn ('A, B, C, H');                       (* Vyvod soobsheniy      *)
+       ReadLn (A, B, C, H);                          (* Vvod znacheniy        *)
+       P := (A + B + C) / 2.0;                       (* Perimetr              *)
+       S :=  sqrt (p * (P - A) * (P - B) * (P - C)); (* Ploshd treugolnica    *)
+
+       V := S * H * 3.0;                             (* Objob                 *)
+       WriteLn (' V = ', V:10:3);                    (* Vyvod rezultat        *)
+       ReadLn;
+  End.
